@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28-6 Display Post Card & Style using CSS</title>
+    <style>
+        #post-container {
+            max-width: 1160px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            row-gap: 50px;
+            padding: 10px;
+        }
+        .post-card{
+            border: 1px solid fuchsia;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 0px 5px 20px 1px rebeccapurple;
+            height: 100%;
+
+        }
+        .post-card p {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="loadPost()">Load Post</button>
+
+    <h1>All Post</h1>
+    <div id="post-container">
+        
+        
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
