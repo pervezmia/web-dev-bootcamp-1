@@ -17,6 +17,17 @@ const displayLoadLevelWord = (levelWords) => {
     console.log(levelWords);
 
     levelWords.forEach(words => {
+        if(words.word.length === 0){
+            console.log("ami khali");
+            const div = document.createElement("div");
+            div.innerHTML = `
+                <div class= text-center>
+                    <p>akhono kono lesson btn click koro ni </p>
+                    <h3 class="font-bold text-3xl">please please click</h3>
+                </div>
+            `
+            displaySection.appendChild(emptyInfo);
+        }
         const div = document.createElement("div");
         div.innerHTML = `
             <div class="bg-base-300 rounded-xl p-6 text-center space-y-3 "">

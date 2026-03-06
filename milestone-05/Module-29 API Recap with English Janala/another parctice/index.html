@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green-world</title>
+    <!-- tailwind link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+
+    <main class="w-11/12 mx-auto">
+        <section class="grid grid-cols-1 sm:grid-cols-4 gap-4">
+            <!-- btn container -->
+
+            <div class=" card col-span-1 shadow-2xl ">
+                <div id="btns-container" class="sticky top-8 grid grid-cols-1 gap-2 p-4">
+
+
+                    <button id="all-trees-btn" class="btn btn-success">All trees</button>
+
+                    <!-- onclick="clickBtn()" -->
+                </div>
+            </div>
+
+            <!-- tree container  -->
+            <div class="card col-span-1 sm:col-span-2 bg-white shadow-2xl p-4">
+                <div id="treeContainer" class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+
+
+
+                </div>
+
+                <!-- loading snipper -->
+                <div id="loadingSnipper" class="hidden flex justify-center items-center">
+                    <span class="loading loading-infinity loading-xl"></span>
+                </div>
+
+            </div>
+
+            <!-- total container -->
+            <div class="card col-span-1 bg-violet-500">dfdffds</div>
+
+        </section>
+
+        <button class="btn" onclick="tree_info.showModal()">open modal</button>
+        <dialog id="tree_info" class="modal">
+            <div class="modal-box">
+
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="font-bold text-2xl text-green-300" id="modalTitle">Tree Details</h3>
+                    <button class="btn btn-sm btn-circle btn-ghost" >X</button>
+
+                </div>
+                <form method="dialog">
+                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                </form>
+                <h3 class="text-lg font-bold">Hello!</h3>
+                <p class="py-4">Press ESC key or click on ✕ button to close</p>
+            </div>
+        </dialog>
+    </main>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
