@@ -2,14 +2,15 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import ToDo from './todo'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
 
       <h1>Vite + React</h1>
+      <ToDo info = "Okay" isDone = {true}></ToDo>
 
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
@@ -21,16 +22,50 @@ function App() {
       {/* <Pet></Pet> */}
       {/* <Developer name="Mojumder"></Developer>
       <Developer expert="javaScript"></Developer> */}
-      <Sport name="Pervez" expert="Football" favo></Sport>
-      <Sport></Sport>
-      <Sport></Sport>
-      <Sport></Sport>
-      <Sport></Sport>
+      {/* <Sport name="Pervez" expert="Football" favorite="Swimming"></Sport>
+      <Sport name="Ahmed" expert="Cricket" favorite="Ha Du Du"></Sport>
+      <Sport name="Mia" expert="Marathon" favorite="WWE"></Sport>
+      <Player name="musfiq" runs= "4000"></Player>
+      <Player name="Mahmudullah" runs= "6000"></Player>
+      <Salami named="Pervez" amount="2000" event='Eid Ul Fitor'></Salami>
+      <Salami named="Sohag" event='Graduation'></Salami>
+      <Salami named="Ahmed" amount="1000" event='Achieve Skill'></Salami> */}
+      
+
+
+      
     </>
   )
 }
+const {named, amount, event} = {named: 'Pervez', amount: '2000', event: "Eid Ul Fitor"}
+function Salami ({named, amount = 2000, event}) {
+  // console.log(named);
+  
+  return(
+    <div className='student'>
+        <h1 >Salami for {event}</h1>
+        <p>name: {named}</p>
+        <h3>Amount: {amount}</h3>
+    </div>
+  )
+}
 
-function Sport () {
+
+const {name, runs}= {name: 'musfiq', runs: '4000'}
+function Player ({name, runs}) {
+  
+  
+  return (
+    <div>
+      <h3>Name: {name}</h3>
+      <p>Runs: {runs}</p>
+    </div>
+  )
+}
+
+// const {name, tech} = {name: "Pervez", tech: 'JS'}
+
+function Sport (props) {
   return (
   <div style={{
     color: "white",
@@ -43,9 +78,9 @@ function Sport () {
 
   }}>
 
-    <p>I am </p>
-    <h1>I expert in </h1>
-    <h3>My favorite game </h3>
+    <p>I am {props.name}</p>
+    <h1>I expert in {props.expert}</h1>
+    <h3>My favorite game {props.favorite}</h3>
   </div>
     
   )

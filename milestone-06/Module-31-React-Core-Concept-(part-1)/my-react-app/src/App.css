@@ -46,3 +46,11 @@
   border: 3px solid salmon;
   border-radius: 20px;
 }
+.student {
+  border: 5px solid sandybrown;
+  border-radius: 20px;
+  padding: 20px;
+  background: whitesmoke;
+  color: black;
+  margin-bottom: 20px;
+}
