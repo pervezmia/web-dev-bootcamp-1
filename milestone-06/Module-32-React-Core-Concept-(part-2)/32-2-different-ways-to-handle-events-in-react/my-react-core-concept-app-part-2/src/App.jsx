@@ -1,5 +1,6 @@
 
 import './App.css'
+import ToDo from './ToDo';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <>
+      <ToDo></ToDo>
       <h3>Get started</h3>
       {/* <button onClick="handleClick()">Click me</button> */}
       <button onClick={handleClick}>Click me</button>
