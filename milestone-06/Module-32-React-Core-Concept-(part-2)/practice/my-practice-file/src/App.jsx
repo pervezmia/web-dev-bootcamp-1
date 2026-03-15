@@ -5,6 +5,7 @@ import Important from './Important';
 import Count from './Count';
 import Batsman from './Batsman';
 import Bollar from './Bollar';
+import Users from './User';
 
 function App() {
   
@@ -22,6 +23,7 @@ function App() {
   }
   return (
     <>
+      <Users></Users>
       <Bollar></Bollar>
       <Batsman></Batsman>
       <Count></Count>
