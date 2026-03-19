@@ -9,7 +9,7 @@ import Users from './User';
 import { Suspense } from 'react';
 import Friends from './Friends';
 
-const fetchUsers = fetch("https://jsonplaceholder.typicode.com/users").then(res => res.json())
+// const fetchUsers = fetch("https://jsonplaceholder.typicode.com/users").then(res => res.json())
 
 
 const fetchFriends = async() => {
@@ -35,9 +35,9 @@ function App() {
   }
   return (
     <>
-      <Suspense fallback={<h3>Loading...</h3>}>
+      {/* <Suspense fallback={<h3>Loading...</h3>}>
         <Users fetchUsers = {fetchUsers}></Users>
-      </Suspense>
+      </Suspense> */}
       <Suspense fallback={<h3>Friends are coming for treats...</h3>}>
         <Friends friendsPromise= {friendsPromise}></Friends>
       </Suspense>
