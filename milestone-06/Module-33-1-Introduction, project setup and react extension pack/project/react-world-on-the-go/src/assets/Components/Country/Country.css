@@ -4,6 +4,13 @@
     padding: 20px;
     border-radius: 20px;
 }
+.visited-country {
+    border: 2px solid violet;
+    margin:  20px;
+    padding: 20px;
+    border-radius: 20px;
+    background: green;
+}
 .btn{
     border: 1px solid saddlebrown;
     padding: 9px;
