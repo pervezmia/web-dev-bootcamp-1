@@ -1,0 +1,51 @@
+{
+  "pricing": [
+    {
+      "id": 1,
+      "name": "Basic Plan",
+      "price": "$20/month",
+      "features": [
+        "Access to all gym equipment",
+        "Locker room access",
+        "1 group class per week",
+        "Free water facility"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Standard Plan",
+      "price": "$40/month",
+      "features": [
+        "Unlimited gym access",
+        "All group classes included",
+        "Basic diet plan",
+        "Cardio & strength zones",
+        "Progress tracking"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Premium Plan",
+      "price": "$70/month",
+      "features": [
+        "Personal trainer (weekly)",
+        "Customized workout plan",
+        "Advanced diet consultation",
+        "Access to sauna & steam room",
+        "Body composition analysis"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Elite Plan",
+      "price": "$100/month",
+      "features": [
+        "Daily personal training",
+        "Premium diet & supplement guide",
+        "Priority booking for all classes",
+        "VIP lounge access",
+        "Recovery & massage sessions"
+      ]
+    }
+  ]
+}
