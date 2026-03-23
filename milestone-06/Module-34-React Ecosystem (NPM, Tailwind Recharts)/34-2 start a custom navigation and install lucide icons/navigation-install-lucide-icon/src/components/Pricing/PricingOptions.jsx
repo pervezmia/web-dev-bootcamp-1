@@ -6,7 +6,7 @@ const PricingOptions = ({pricingPromise}) => {
     const pricingInfo = pricingData.pricing
     console.log(pricingInfo);
     return (
-        <div className=' md:flex gap-5 p-5 mx-10 rounded-2xl h-full'>
+        <div className=' grid md:grid-cols-3 gap-5 p-5 mx-10 rounded-2xl h-full'>
             {
                 pricingInfo.map(pricing => <PricingCard 
                     key={pricing.id} 
