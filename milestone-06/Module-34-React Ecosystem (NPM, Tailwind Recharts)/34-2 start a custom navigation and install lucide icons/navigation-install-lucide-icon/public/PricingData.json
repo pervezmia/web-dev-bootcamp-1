@@ -15,6 +15,7 @@
       "id": 2,
       "name": "Standard Plan",
       "price": "$40/month",
+      "popular": true,
       "features": [
         "Unlimited gym access",
         "All group classes included"
