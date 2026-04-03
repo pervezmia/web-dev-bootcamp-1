@@ -1,8 +1,13 @@
 .root-main{
     display: flex;
-    gap: 20;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
     
 }
 nav a.active {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    background: green;
+    padding: 10px;
+    border-radius: 10px;
 }
