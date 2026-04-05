@@ -5,7 +5,7 @@ import Usr from '../usr/Usr';
 const User = () => {
 
     const users = useLoaderData();
-    console.log(users);
+    // console.log(users);
     return (
         <div>
             <h3>This is users sections</h3>
