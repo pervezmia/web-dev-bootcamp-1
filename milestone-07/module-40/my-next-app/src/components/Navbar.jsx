@@ -9,13 +9,13 @@ const Navbar = () => {
   console.log(pathName);
 
     const links = <>
-        <li><Link className= {pathName === '/' && "text-green-200 font-semibold"} href="/">Home</Link></li>
-        <li><Link className={pathName === '/about' && "text-green-200 font-semibold" } href="/about">About</Link></li>
-        <li><Link className={pathName === '/contact' && "text-green-200 font-semibold" }  href="/contact">Contact</Link></li>
-        <li><Link className={pathName === '/contact/support' && "text-green-200 font-semibold" }  href="/contact/support">Support</Link></li>
-        <li><Link className={pathName === '/blogs' && "text-green-200 font-semibold" }  href="/blogs">Blogs</Link></li>
-        <li><Link className={pathName === '/about' && "text-green-200 font-semibold" }  href="/dashboard">Dashboard</Link></li>
-        <li><Link className={pathName === '/about' && "text-green-200 font-semibold" }  href="/users">Users</Link></li>
+        <li><Link className= {pathName === '/' ? "text-green-200 font-semibold" : ""} href="/">Home</Link></li>
+        <li><Link className={pathName === '/about' ? "text-green-200 font-semibold" : "" } href="/about">About</Link></li>
+        <li><Link className={pathName === '/contact' ? "text-green-200 font-semibold" : "" }  href="/contact">Contact</Link></li>
+        <li><Link className={pathName === '/contact/support' ? "text-green-200 font-semibold" : "" }  href="/contact/support">Support</Link></li>
+        <li><Link className={pathName === '/blogs' ? "text-green-200 font-semibold" : "" }  href="/blogs">Blogs</Link></li>
+        <li><Link className={pathName === '/dashboard' ? "text-green-200 font-semibold" : "" }  href="/dashboard">Dashboard</Link></li>
+        <li><Link className={pathName === '/users' ? "text-green-200 font-semibold" : "" }  href="/users">Users</Link></li>
     </>
 
   return (

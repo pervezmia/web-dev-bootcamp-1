@@ -1,4 +1,17 @@
 import Link from "next/link";
+import { Roboto } from 'next/font/google'
+import { Pacifico } from 'next/font/google'
+ 
+
+const roboto = Roboto({
+  weight: '400',
+  subsets: ['latin'],
+})
+ 
+const pacifico = Pacifico({
+  weight: '400',
+  subsets: ['latin'],
+})
 
 export const metadata = {
   title: 'Blogs page',
@@ -51,8 +64,8 @@ const BlogPage = () => {
       <h2 className="text-3xl font-bold mb-4">Blogs</h2>
       {
         blogs.map(blog => 
-            <div key={blog.id}>
-                <h2>{blog.title}</h2>
+            <div className={roboto.className} key={blog.id}>
+                <h2 className={pacifico.className}>{blog.title}</h2>
                 <Link className="btn text-xs" href={`/blogs/${blog.id}`}>Show blog info</Link>
             </div>
         )
