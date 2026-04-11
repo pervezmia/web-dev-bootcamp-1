@@ -1,7 +1,7 @@
 
 
 const Pervez = () => {
-    console.log("This is header component");
+    // console.log("This is header component");
     return (
         <div>
             <h3>This is Client side component </h3>

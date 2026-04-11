@@ -6,7 +6,7 @@ const PostPage = () => {
 
 
     const postsPromise = fetch("https://jsonplaceholder.typicode.com/posts").then(res => res.json());
-    console.log(postsPromise);
+    // console.log(postsPromise);
 
 
 

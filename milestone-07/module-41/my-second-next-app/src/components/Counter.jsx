@@ -9,7 +9,7 @@ const Counter = () => {
     const [count, setCount] = useState(0);
 
 
-    console.log("Counter value in counter component", count);
+    // console.log("Counter value in counter component", count);
 
     return (
         <div>

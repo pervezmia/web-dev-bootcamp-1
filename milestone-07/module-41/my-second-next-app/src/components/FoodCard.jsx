@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const FoodCard = ({ food }) => {
-    console.log(food);
+    // console.log(food);
   const { id, category, dish_name, image_link, price, rating, alternative_names } = food;
   return (
     <div className="card bg-base-100 max-w-96 shadow-sm">
