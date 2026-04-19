@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Mouse",
+      "description": "Ergonomic wireless mouse with adjustable DPI",
+      "price": 20.99,
+      "category": "Electronics",
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "name": "Mechanical Keyboard",
+      "description": "RGB backlit mechanical keyboard with blue switches",
+      "price": 79.99,
+      "category": "Electronics",
+      "inStock": true
+    },
+    {
+      "id": 3,
+      "name": "Running Shoes",
+      "description": "Lightweight running shoes for everyday training",
+      "price": 59.99,
+      "category": "Footwear",
+      "inStock": false
+    },
+    {
+      "id": 4,
+      "name": "Smart Watch",
+      "description": "Fitness tracking smartwatch with heart rate monitor",
+      "price": 129.99,
+      "category": "Wearables",
+      "inStock": true
+    },
+    {
+      "id": 5,
+      "name": "Bluetooth Speaker",
+      "description": "Portable speaker with deep bass and long battery life",
+      "price": 45.5,
+      "category": "Audio",
+      "inStock": true
+    }
+  ]
+}
