@@ -1,0 +1,48 @@
+[
+    {
+      "id": 1,
+      "title": "Design homepage",
+      "description": "Create wireframe and UI design for homepage",
+      "status": "in-progress",
+      "priority": "high",
+      "due_date": "2026-04-25",
+      "assigned_to": "Alice"
+    },
+    {
+      "id": 2,
+      "title": "Fix login bug",
+      "description": "Resolve authentication issue on mobile devices",
+      "status": "pending",
+      "priority": "critical",
+      "due_date": "2026-04-20",
+      "assigned_to": "Bob"
+    },
+    {
+      "id": 3,
+      "title": "Write API documentation",
+      "description": "Document all endpoints for v2 API",
+      "status": "completed",
+      "priority": "medium",
+      "due_date": "2026-04-15",
+      "assigned_to": "Charlie"
+    },
+    {
+      "id": 4,
+      "title": "Set up database backup",
+      "description": "Automate daily backups for production database",
+      "status": "in-progress",
+      "priority": "high",
+      "due_date": "2026-04-22",
+      "assigned_to": "Dana"
+    },
+    {
+      "id": 5,
+      "title": "Prepare presentation",
+      "description": "Slides for quarterly review meeting",
+      "status": "pending",
+      "priority": "low",
+      "due_date": "2026-04-30",
+      "assigned_to": "Evan"
+    }
+  ]
+
