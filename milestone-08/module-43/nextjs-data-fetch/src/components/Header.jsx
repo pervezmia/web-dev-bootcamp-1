@@ -4,14 +4,15 @@ const Header = () => {
     const links = <>
         <Link href={"/"}><li className="mr-3">Home</li></Link>
         <Link href={"/posts"}><li className="mr-3">Posts</li></Link>
-        <Link href={""}><li className="mr-3">item 1</li></Link>
+        <Link href={"/products"}><li className="mr-3">Products</li></Link>
+        <Link href={"/books"}><li className="mr-3">Books</li></Link>
         
     </>
   return (
     <div className="navbar bg-base-100 shadow-sm">
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -37,7 +38,7 @@ const Header = () => {
         </div>
         <a className="btn btn-ghost text-xl">daisyUI</a>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden md:flex">
         <ul className="menu menu-horizontal px-1">
           {links}
         </ul>
