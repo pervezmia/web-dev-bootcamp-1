@@ -3,7 +3,7 @@ import { ThemeProvider } from "next-themes";
 
 const NextHeroProvider = ({children}) => {
   return (
-    <ThemeProvider attribute="class" defaultTheme="light">
+    <ThemeProvider  defaultTheme="light">
       {children}
     </ThemeProvider>
   );

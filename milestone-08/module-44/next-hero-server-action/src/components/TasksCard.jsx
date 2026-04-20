@@ -11,13 +11,13 @@ const TasksCard = ({task}) => {
         role="img"
       /> */}
       <Card.Header>
-        <Card.Title className="font-bold text-black text-xl">{title}</Card.Title>
+        <Card.Title className="font-bold  text-xl">{title}</Card.Title>
         <Card.Description>
           {description}
         </Card.Description>
       </Card.Header>
       <Card.Footer>
-        <Link className="text-black"
+        <Link className=""
           aria-label="Go to Acme Creator Hub (opens in new tab)"
           href="/tasks"
           rel="noopener noreferrer"
