@@ -24,19 +24,25 @@ const Navbar = () => {
           </div>
           <ul className="flex items-center gap-4">
             <li>
-              <Link href="/">Features</Link>
+              <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/">Pricing</Link>
+              <Link href="/dashboard">Dashboard</Link>
+            </li>
+            <li>
+              <Link href="/about">About</Link>
             </li>
           </ul>
-        <div>
-            {user ? <>
+        <div className="flex gap-2">
+            <div className="bg-blue-200 text-black px-2 rounded-2xl">
+              {user ? <>
                 <p>Welcome, {user.name}!</p>
                 <button
                     onClick={() => signOut()}
                 >Sign Out</button>
             </> : <Link href={"/auth/signin"}>Sign In</Link>}
+            </div>
+            <div className="bg-gray-200 text-black px-2 rounded-2xl"><Link href={"/auth/signup"}>Sign Up</Link></div>
         </div>
         </header>
       </nav>
