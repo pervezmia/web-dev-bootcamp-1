@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { authClient } from "@/lib/auth-client";
 import { Check, Eye, EyeSlash } from "@gravity-ui/icons";
 import {
@@ -13,33 +13,27 @@ import {
 } from "@heroui/react";
 import { useState } from "react";
 
-
 const SignInPage = () => {
+  const [isVisible, setIsVisible] = useState(false);
 
-    const [isVisible, setIsVisible] = useState(false);
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const userData = Object.fromEntries(formData.entries());
+    console.log("Form submitted with: ", userData);
 
-    const onSubmit = async(e) => {
-        e.preventDefault();
-        const formData = new FormData(e.currentTarget);
-        const userData = Object.fromEntries(formData.entries());
-        console.log("Form submitted with: ", userData);
-        
-        const {data, error} = await authClient.signIn.email({
-            email: userData.email,
-            password: userData.password,
-            rememberMe: true,
-            callbackURL: "/dashboard"
-        })
-        console.log("Sign in response: ", {data, error});
-        
-
-    }
-    return (
-        <div>
-            <h3>Please Sign in page</h3>
-            <Form className="flex w-96 flex-col gap-4" onSubmit={onSubmit}>
-
-
+    const { data, error } = await authClient.signIn.email({
+      email: userData.email,
+      password: userData.password,
+      rememberMe: true,
+      callbackURL: "/dashboard",
+    });
+    console.log("Sign in response: ", { data, error });
+  };
+  return (
+    <div>
+      <h3>Please Sign in page</h3>
+      <Form className="flex w-96 flex-col gap-4" onSubmit={onSubmit}>
         {/* Email */}
         <TextField
           isRequired
@@ -93,8 +87,8 @@ const SignInPage = () => {
           </Button>
         </div>
       </Form>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default SignInPage;

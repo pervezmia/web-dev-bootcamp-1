@@ -7,7 +7,7 @@ import { GoShareAndroid } from "react-icons/go";
 import { IoBookmarkOutline } from "react-icons/io5";
 
 const NewsCard = ({ n }) => {
-  console.log(n, "news");
+  // console.log(n, "news");
   return (
     <div className="">
       <div className="card bg-base-100 shadow-sm">

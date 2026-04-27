@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import React from 'react';
 
+export const metadata = {
+  title: "Career Page",
+  description: "Career page in Dragon news portal",
+};
+
 const CareerPage = () => {
     return (
         <div>
