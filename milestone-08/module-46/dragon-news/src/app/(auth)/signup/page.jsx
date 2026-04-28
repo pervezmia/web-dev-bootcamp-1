@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { IoMdEye, IoMdEyeOff } from "react-icons/io";
+import { toast } from "react-toastify";
 
 const SignUpPage = () => {
   const [seePassword, setSeePassword] = useState(false);
@@ -29,8 +30,15 @@ const SignUpPage = () => {
     })
 
     console.log(res, error);
+
+    if(error){
+      toast.error("Something is wrong!")
+    }
+    if(res){
+      toast.success("Successfully Sign In!");
+    }
   };
-  console.log(errors);
+  // console.log(errors);
 
   return (
     <div className="container  mx-auto bg-slate-100 min-h-[80vh] flex justify-center items-center">
